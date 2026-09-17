@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRADE WITH MOHIT AGRAWAL
-</title>
+    <title>TRADE WITH MOHIT AGRAWAL</title>
 
     <!-- META PIXEL TRACKING CODE -->
     <script>
@@ -216,8 +215,14 @@
             color: #aaa;
         }
 
-        .footer-agency strong {
+        .footer-agency a {
             color: #ff9900;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .footer-agency a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -232,8 +237,7 @@
 
         <!-- Title Section -->
         <div class="main-title">
-            👑 TRADE WITH MOHIT AGRAWAL
-👑
+            👑 TRADE WITH MOHIT AGRAWAL 👑
         </div>
 
         <div class="sub-title">
@@ -299,40 +303,38 @@
 
         <!-- Footer Branding -->
         <div class="footer-agency">
-            🔥 Ads by <strong>elite marketing agncy</strong> - Instant Growth 🚀
+            🔥 Ads by <a href="https://t.me/+mp524qElHEQ2YWU1" target="_blank">elite marketing agncy</a> - Instant Growth 🚀
         </div>
 
     </div>
 
     <!-- UPDATED TRACKING & REDIRECT SCRIPT -->
     <script>
-        var isClicked = false; // ट्रैक करने के लिए फ़्लैग वेरिएबल
-        var telegramUrl = "https://t.me/+mp524qElHEQ2YWU1"; 
+        var isClicked = false;
+        var telegramUrl = "https://t.me/+WZYesuu61NI3ZTg1"; 
 
         function trackButtonClick() {
-            // अगर यूजर पहली बार क्लिक कर रहा है
             if (!isClicked) {
-                isClicked = true; // क्लिक दर्ज हो गया, अब यह बदल नहीं सकता
+                isClicked = true;
 
-                // 1. Facebook Pixel Events Fire होंगे
+                // 1. Facebook Pixel Events
                 if (typeof fbq !== 'undefined') {
                     fbq('trackCustom', 'TelegramBtnClick'); 
                     fbq('track', 'Subscribe'); 
                 }
 
-                // 2. बटन को विजुअली डिसेबल कर दें (सभी cta-btn पर असर दिखाने के लिए)
+                // 2. Disable buttons visually
                 var btns = document.querySelectorAll('.cta-btn');
                 btns.forEach(function(btn) {
-                    btn.style.pointerEvents = 'none'; // अतिरिक्त क्लिक पूरी तरह ब्लॉक
-                    btn.style.opacity = '0.7';       // हल्का धुंधला इफेक्ट
+                    btn.style.pointerEvents = 'none';
+                    btn.style.opacity = '0.7';
                 });
 
-                // 3. 300ms के बाद Telegram पर रीडायरेक्ट करें
+                // 3. Redirect to Telegram Channel
                 setTimeout(function() {
                     window.location.href = telegramUrl;
                 }, 300);
             }
-            // अगर पहले से क्लिक हो चुका है, तो कुछ भी नहीं होगा (इवेंट दोबारा काउंट नहीं होगा)
         }
     </script>
 
